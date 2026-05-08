@@ -1,17 +1,25 @@
 # BioTranslate Pro
 
-A professional single-page Chinese-English biomedical translation website built with **Next.js + TypeScript + Tailwind CSS**.
+A bright, professional single-page Chinese-English biomedical translation website built with **Next.js + TypeScript + Tailwind CSS**.
 
-## Features
-- Clean responsive single-page layout (desktop + mobile)
-- Header, hero section, translation panel, terminology table, and use-case example cards
-- Translation settings:
-  - Chinese → English
-  - English → Chinese
-  - Modes: General Biology, Academic Paper, Methods Section, Figure Legend, Presentation Slide, Email to Professor
-  - Styles: Clear, Formal Academic, Nature/Cell Style
-- Mock translation output (no OpenAI API integration yet)
-- Copy button and loading state
+## What changed
+- Removed mock-only translation behavior.
+- Added a local biomedical glossary fallback for direct term-level translation.
+- Exact glossary matches return concise terminology translations.
+- Longer text returns professional biomedical academic-style translations.
+- Added a detected terminology table based on the input content.
+- Redesigned UI with a warm ivory + cream academic visual system (no dark mode), improved spacing, button styles, error and loading states.
+
+## Included biomedical glossary entries
+- 光开关荧光蛋白 → photoswitchable fluorescent protein
+- 荧光蛋白 → fluorescent protein
+- 光漂白 → photobleaching
+- 定向进化 → directed evolution
+- 发色团 → chromophore
+- 活细胞成像 → live-cell imaging
+- 多重成像 → multiplexed imaging
+- 时间复用成像 → temporally multiplexed imaging
+- 可逆光开关荧光蛋白 → reversibly photoswitchable fluorescent protein
 
 ## Run locally
 ```bash
